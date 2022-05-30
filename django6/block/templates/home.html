@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Bu web page</h1>
+{% for image in image %}
+<img src="{{ image.image.url }}" alt="" width="300">
+{% endfor %}
+{% endblock content %}
